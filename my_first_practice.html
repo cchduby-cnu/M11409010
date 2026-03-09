@@ -60,6 +60,38 @@
                 </tr>
             </tfoot>
         </table>
+
+        <form action="#" method="get" style="margin-top:12px;">
+            <label for="username">姓名：</label>
+            <input type="text" id="username" name="username" placeholder="輸入姓名">
+
+            <label for="country">國家/地區：</label>
+            <select id="country" name="country">
+                <option value="">請選擇</option>
+                <option value="tw">台灣</option>
+                <option value="jp">日本</option>
+                <option value="us">美國</option>
+            </select>
+
+            <label for="message">備註：</label>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="輸入備註"></textarea>
+        </form>
+
+        <!-- 新增媒體元素：圖片、音訊、影片 -->
+        <figure style="margin-top:12px;">
+            <img src="images/sample.jpg" alt="示範圖片" style="max-width: 250px; height: 160px;">
+            <figcaption>示範圖片說明</figcaption>
+        </figure>
+
+        <audio controls style="display:block; margin-top:8px;">
+            <source src="media/sample-audio.mp3" type="audio/mpeg">
+            您的瀏覽器不支援 audio 元素。
+        </audio>
+
+        <video controls style="display:block; margin-top:8px; max-width:100%;">
+            <source src="media/sample-video.mp4" type="video/mp4">
+            您的瀏覽器不支援 video 元素。
+        </video>
     </section>
 
     <hr>
